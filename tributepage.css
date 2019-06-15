@@ -1,0 +1,22 @@
+#title{
+  display:flex;
+  justify-content: center;
+}
+#img-div{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    ". picture ."
+    ". caption .";
+  grid-row-gap: 10px;
+}
+#image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  grid-area: picture;
+}
+#img-caption{
+  grid-area: caption
+}
