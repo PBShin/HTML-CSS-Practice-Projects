@@ -1,0 +1,28 @@
+<main>
+  <header>
+    <h1 id="title">Best Burrito Survey</h1>
+    <p id="description">Survey to settle the debate for the best burrito restaurant once and for all</p>
+  </header>
+  <form id="survey-form">
+    <label for="name" id="name-label">Please enter your name:<br><input type="text" name="name" id="name" placeholder="Name" required></label><br>
+    <label for="email" id="email-label">Please enter your email:<br><input type="email" name="name" id="email" placeholder="Email Address" required></label><br>
+    <label for="dropdown" id="dropdown-label">Please select your favorite restaurant:<br>
+      <select name="favorite" id="dropdown">
+        <label for="select-0"><option value="" name="favorite" id="select-0" disabled selected>Select your favorite restaurant</option></label>
+      <label for="select-1"><option value="chipotle" name="favorite" id="select-1">Chipotle</option></label>
+      <label for="select-2"><option value="qdoba" name="favorite" id="select-2">Qdoba</option></label>
+      <label for="select-3"><option value="moe's" name="favorite" id="select-3">Moe's</option></label>
+      </select><br>
+    <label for="radio" id="radio-label">Please select your least favorite restaurant:<br>
+      <label for="radio-1" id="radio-1-label"><input type="radio" name="radio" id="radio-1" value="chipotle">Chipotle</label><br>
+      <label for="radio-2" id="radio-2-label"><input type="radio" name="radio" id="radio-2" value="qdoba">Qdoba</label><br>
+      <label for="radio-3" id="radio-3-label"><input type="radio" name="radio" id="radio-3" value="moe's">Moe's</label></label><br>
+    <label for="checkbox" id="checkbox-label">Please select all the restaurants you have visited in the past week:<br>
+      <label for="checkbox-1"><input type="checkbox" name="checkbox" id="checkbox-1" value="chipotle">Chipotle</label><br>
+      <label for="checkbox-2"><input type="checkbox" name="checkbox" id="checkbox-2" value="qdoba">Qdoba</label></label><br>
+      <label for="checkbox-3"><input type="checkbox" name="checkbox" id="checkbox-3" value="moe's">Moe's</label><br>
+    <label for="number" id="number-label">Please enter the number of times you've visited these restaurants in the past week:<br><input type="number" id="number" placeholder="Number" min=1 max=7></label><br>
+   <label for="comments">Please write any additional comments below:<br><textarea rows="4" columns= "50" id="comments">Please enter comments here</textarea></label><br>
+  <input type="button" id="submit" value="submit">
+  </form>
+</main>

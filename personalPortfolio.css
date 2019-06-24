@@ -1,0 +1,121 @@
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #FF729F;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1 ;
+}
+
+.nav-link {
+  margin: 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+.nav-link:hover {
+  color: #56CBF9;
+}
+
+#container {
+  padding-top: 50px;
+  background-color: #56CBF9;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #5EB2A4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome-section > * {
+  color: white;
+}
+
+#projects {
+  background-color: #56CBF9;
+  padding-top: 50px;
+  display: grid;
+  grid-template-areas:
+    ". title title ."
+    ". tile1 tile2 ."
+    ". tile3 tile4 .";
+}
+
+#projects-title {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#tech-doc {
+  grid-area: tile1;
+}
+
+#landing-page {
+  grid-area: tile2
+}
+
+#survey-form {
+  grid-area: tile3
+}
+
+#tribute-page {
+  grid-area: tile4;
+}
+
+#links {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    ". linkedin github codepen .";
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  background-color: #D3C4D1;
+}
+
+.overlay {
+  color:white;
+}
+
+.social-links {
+  width: 15%;
+  height: auto;
+  margin: 20px;
+}
+
+#linkedin-link {
+  grid-area: linkedin;
+}
+
+#profile-link {
+  grid-area: github;
+}
+
+#codepen-link {
+  grid-area: codepen;
+}
+
+@media screen 
+  and (max-width: 500px) {
+    #projects {
+      background-color: #56CBF9;
+      padding-top: 50px;
+      display: grid;
+      grid-template-areas:
+        "title"
+        "tile1"
+        "tile2"
+        "tile3"
+        "tile4";
+    }
+}
